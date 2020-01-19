@@ -7,5 +7,5 @@ root "post_images#index"
     	resource :favorites, only: [:create, :destroy]
 		resource :post_comments, only:[:create, :destroy]
 	end
-	    resources :users, only: [:show]
+	    resources :users, only: [:show, :edit, :update]
 end
